@@ -1,6 +1,7 @@
 <h1>Theme Changer</h1>
 
 <div class="headerBar">
-  <color-changer font-color="$ctrl.fontColor" update="$ctrl.updateColor(xyz)"></color-changer>
+  <edit-toggle allow-edit="$ctrl.allowEdit" update="$ctrl.updateEditStatus(val)"></edit-toggle>
+  <color-changer font-color="$ctrl.fontColor" update="$ctrl.updateColor(val)"></color-changer>
   <div>Debug for app: {{$ctrl}}</div>
 </div>

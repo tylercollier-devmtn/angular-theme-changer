@@ -7,7 +7,11 @@ angular.module('themechanger').component('app', {
     this.fontFamily = 'monospace';
 
     this.updateColor = function(val) {
-      this.allowEdit = val;
+      this.fontColor = val;
     };
+
+    this.updateEditStatus = function(val) {
+      this.allowEdit = val;
+    }
   }
 });
