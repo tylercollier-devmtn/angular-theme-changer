@@ -1,12 +1,11 @@
-<h1>Theme Changer</h1>
-
-<div class="headerBar">
-  <edit-toggle allow-edit="$ctrl.allowEdit" update="$ctrl.updateEditStatus(val)"></edit-toggle>
-  <color-changer allow-edit="$ctrl.allowEdit" font-color="$ctrl.fontColor" update="$ctrl.updateColor(val)"></color-changer>
-  <div className="textArea">
+<div>
+  <div class="headerBar">
+    <edit-toggle allow-edit="$ctrl.allowEdit" update="$ctrl.updateEditStatus(val)"></edit-toggle>
+    <color-changer allow-edit="$ctrl.allowEdit" font-color="$ctrl.fontColor" update="$ctrl.updateColor(val)"></color-changer>
+  </div>
+  <div class="textArea">
     <text-container
       font-color="$ctrl.fontColor"
     />
   </div>
-  <div>Debug for app: {{$ctrl}}</div>
 </div>
