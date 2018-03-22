@@ -1,3 +1,9 @@
-<h1>Color changer</h1>
-
-Color: <input ng-model="$ctrl.fontColor">
+<select
+  class="dropDownContainer"
+  ng-model="$ctrl.fontColor"
+  ng-change="$ctrl.update({ value: $ctrl.fontColor, golf: 'hello' })"
+>
+  <option value="black">Black</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>
