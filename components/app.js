@@ -4,10 +4,12 @@ angular.module('themechanger').component('app', {
     this.allowEdit = true;
     this.fontColor = 'black';
 
-    this.updateColor = function(val, cool) {
-      // console.log('-------------- val', val);
-      console.log('-------------- cool', cool);
+    this.updateColor = function(val) {
       this.fontColor = val;
+    };
+
+    this.updateEditStatus = function(val) {
+      this.allowEdit = val;
     };
   },
   controllerAs: 'myCtrl',

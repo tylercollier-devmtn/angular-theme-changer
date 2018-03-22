@@ -3,6 +3,7 @@ angular.module('themechanger').component('colorChanger', {
   bindings: {
     fontColor: '<',
     update: '&',
+    allowEdit: '<',
   },
   // controller: function() {
   //   this.doStuffOnChange = function() {

@@ -1,7 +1,8 @@
 <select
   class="dropDownContainer"
   ng-model="$ctrl.fontColor"
-  ng-change="$ctrl.update({ value: $ctrl.fontColor, golf: 'hello' })"
+  ng-change="$ctrl.update({ value: $ctrl.fontColor })"
+  ng-disabled="!$ctrl.allowEdit"
 >
   <option value="black">Black</option>
   <option value="blue">Blue</option>

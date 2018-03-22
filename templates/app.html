@@ -1,12 +1,17 @@
 <div class="headerBar">
+  <edit-toggle
+    allow-edit="myCtrl.allowEdit"
+    update="myCtrl.updateEditStatus(val)"
+  ></edit-toggle>
   <color-changer
     font-color="myCtrl.fontColor"
-    update="myCtrl.updateColor(golf, value)"
+    update="myCtrl.updateColor(value)"
+    allow-edit="myCtrl.allowEdit"
   ></color-changer>
-
 </div>
 <div class="textArea">
-
+  <textarea
+    ng-style="{ color: myCtrl.fontColor }"></textarea>
 </div>
 
 <div>Component state: {{myCtrl}}</div>
