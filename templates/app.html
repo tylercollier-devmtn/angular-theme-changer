@@ -2,6 +2,6 @@
 
 <div class="headerBar">
   <edit-toggle allow-edit="$ctrl.allowEdit" update="$ctrl.updateEditStatus(val)"></edit-toggle>
-  <color-changer font-color="$ctrl.fontColor" update="$ctrl.updateColor(val)"></color-changer>
+  <color-changer allow-edit="$ctrl.allowEdit" font-color="$ctrl.fontColor" update="$ctrl.updateColor(val)"></color-changer>
   <div>Debug for app: {{$ctrl}}</div>
 </div>
