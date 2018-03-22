@@ -1,0 +1,11 @@
+<select
+  class="dropDownContainer"
+  ng-model="$ctrl.fontColor"
+  ng-change="$ctrl.update({ xyz: $ctrl.fontColor })"
+>
+  <option value="black"> Black </option>
+  <option value="blue"> Blue </option>
+  <option value="green"> Green </option>
+</select>
+
+<div>Font color of this color-changer component: {{$ctrl.fontColor}}</div>
