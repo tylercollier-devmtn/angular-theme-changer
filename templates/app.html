@@ -2,10 +2,14 @@
   <div class="headerBar">
     <edit-toggle allow-edit="$ctrl.allowEdit" update="$ctrl.updateEditStatus(val)"></edit-toggle>
     <color-changer allow-edit="$ctrl.allowEdit" font-color="$ctrl.fontColor" update="$ctrl.updateColor(val)"></color-changer>
+    <size-changer allow-edit="$ctrl.allowEdit" font-size="$ctrl.fontSize" update="$ctrl.updateSize(val)"></size-changer>
   </div>
   <div class="textArea">
     <text-container
       font-color="$ctrl.fontColor"
+      font-size="$ctrl.fontSize"
     />
   </div>
+
+  {{$ctrl}}
 </div>

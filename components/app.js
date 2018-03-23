@@ -12,6 +12,10 @@ angular.module('themechanger').component('app', {
 
     this.updateEditStatus = function(val) {
       this.allowEdit = val;
-    }
+    };
+
+    this.updateSize = function(val) {
+      this.fontSize = parseInt(val, 10);
+    };
   }
 });

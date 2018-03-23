@@ -1,0 +1,8 @@
+<select
+  class="dropDownContainer"
+  ng-model="$ctrl.fontSize"
+  ng-change="$ctrl.update({ val: $ctrl.fontSize })"
+  ng-disabled="!$ctrl.allowEdit"
+  ng-options="o.v as o.l for o in [{ v: 12, l: '12' }, { v: 16, l: '16' }, { v: 20, l: '20' }]"
+>
+</select>
